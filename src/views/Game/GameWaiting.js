@@ -4,7 +4,7 @@ import {Button, Form, Row, Table} from 'react-bootstrap';
 import './game.css'
 
 function Game(props){
-    const linkToCopy = `localhost:3000/${props.roomName}`;
+    const linkToCopy = `https://mormonbridge.netlify.app/${props.roomName}`;
     const [copiedClass, setCopiedClass] = useState('');
         
     const copyToClipboard = () => {
