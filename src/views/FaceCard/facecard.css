@@ -1,0 +1,61 @@
+.facecard{
+    box-shadow: 2px 2px 8px 1px rgba(81, 81, 81, 0.199);
+}
+
+.card-trump-lead{
+    width: auto;
+    height: 7.5em;
+    border-radius: 3px;
+}
+
+.card-popup{
+    width: auto;
+    height: 7.5em;
+    border-radius: 3px;
+}
+
+.card-winner{
+    border: 2px solid #ff9d00;
+}
+
+.card-opponent{
+    min-height: 6em;   
+    height: 7em; 
+    max-width: auto;
+    width: auto;
+    text-align: center;
+}
+
+.card-player{
+    min-height: 7em;  
+    height: 8em;  
+    width: auto;
+    max-width: auto;
+    text-align: center;
+    margin-left: -1.5em;
+    box-shadow: -4px 1px 5px 1px rgba(83, 83, 83, 0.178);
+    background-color: rgb(255, 255, 255);
+}
+
+.card-played{
+    border: 2.5px solid rgba(51, 104, 61, 0.995);
+    border-radius: 3px;
+}
+
+.card-player-hover:hover{
+    cursor: pointer;
+    box-shadow: -3px 2px 5px 1px rgba(171, 171, 171, 0.094);
+    border: 1px solid rgba(128, 128, 128, 0.294);
+}
+
+.active-card{
+    border: 2px solid rgba(51, 104, 61, 0.995);
+    box-shadow: 1px 1px 5px 1px rgba(51, 104, 61, 0.602);
+    border-radius: 3px;
+
+}
+
+.active-card:hover{
+    border: 2px solid rgba(51, 104, 61, 0.995);
+    box-shadow: 1px 1px 5px 1px rgba(51, 104, 61, 0.16);
+}

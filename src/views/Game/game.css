@@ -1,0 +1,328 @@
+.l{
+    text-align: left;
+    margin-right: 2px;
+}
+
+.r{
+    text-align: right;
+    margin-left: 2px;
+}
+
+.font-300{
+  font-weight: 300;
+}
+
+.player-seat{
+    padding: .4em .7em;
+    box-shadow: 2px 2px 10px 1px #80808022;
+    border-radius: 5px;
+    background-color: #ffffff18;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+.player-cards-row{
+    display: flex;
+    justify-content: center;
+}
+
+.player-info{
+    display: flex;
+    justify-content: center;
+    color: #292929;
+    font-weight: 300;
+}
+
+.player-info div{
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.table-header{
+    border: 1px solid rgba(49, 83, 61, 0.347);
+    box-shadow: 2px 2px 10px 1px rgba(128, 128, 128, 0.418);
+    border-radius: 4px;
+    background-color: #346d43;
+    color: white;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
+.message-board{
+    /* border-top: 1px solid #ffffff54; */
+    margin-top: .3em;
+    padding: .6em 1em;
+    font-size: .8em;
+    font-weight: 300;
+    min-height: 10.4em;
+    max-height: 8em;
+    text-align: left;
+    background-color: #2b643d;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 1px rgba(112, 112, 112, 0.084);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.table-header-text{
+  font-size: .9em;
+  font-weight: 300;
+}
+
+.message-board p{
+    margin-bottom: .6em;
+    line-height: 1.2em;
+}
+
+.grey-message{
+    color: #fff5c6ca;
+}
+
+.opponents-container{
+    text-align: center;
+    display: flex;
+}
+
+.opponent-seat{
+    border: 1px solid green;
+    display: inline-block;
+}
+
+.opponent-info{
+    color: #292929;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+  
+  /* Create two equal columns that floats next to each other */
+.opp-col {
+    width: 49%;
+    display: flex;
+    margin-top: .4em;
+    border-bottom: 1px solid #7c776d18;
+    border-top: 1px solid #7c776d18;
+    border-radius: 9px;
+    height: 8em;
+}
+
+.opp-col div{
+    flex: 50%;
+}
+  
+  /* Clear floats after the columns */
+.opp-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-right{
+    float: right;
+    text-align: right;
+    padding: .4em .5em;
+    border-left: 1px solid #7c776d18;
+
+  }
+
+.col-left{
+    float: left;
+    text-align: left;
+    flex-direction: row-reverse;
+    padding: .4em .5em;
+    border-right: 1px solid #7c776d18;
+}
+
+
+.btn-play-card{
+    color: rgb(32, 32, 32);
+    width: 7em;
+    height: 2.6em;
+    box-shadow: 2px 2px 8px 1px #ababab6c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #346d43;
+}
+
+.btn-play-card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 1px #ababab04;
+}
+
+.btn-play-card-group{
+  width: 70vw;
+  margin: auto;
+}
+
+.message-col{
+    max-width: 100%;
+    padding-left: 2px;
+}
+
+.current-player-turn{
+    /* box-shadow: 1px 1px 7px 1px #244d2f85; */
+    border: 3px solid  #244d2f85;
+    animation: border-pulsate 1.5s infinite;
+}
+
+@keyframes border-pulsate {
+  0%   { border: 2px solid  #ff9d00}
+  50% { border: 2px solid  #ff9d0016}
+  100%   { border: 2px solid  #ff9d00}
+  /* 0%   { box-shadow: 1px 1px 7px 1px #2e633dac; }
+  50% { box-shadow: 1px 1px 7px 1px #244d2f1c; }
+  100%   { box-shadow: 1px 1px 7px 1px #2e633dac; } */
+}
+
+.error-message{
+  color: #ff000092;
+  font-size: 50%;
+  font-weight: 300;
+}
+
+.copied{
+  color: green;
+  font-weight: bold;
+  font-size: 80%;
+}
+
+.copied-confirmation-text{
+  font-weight: 300;
+  font-size: 80%;
+  color: green;
+}
+
+.game-link{
+  padding: .4em;
+  border-radius: 5px;
+  background-color: #ff9d0060;
+  width: 40vw;
+  margin: auto;
+}
+
+.game-link:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 900px) {
+  .btn-play-card-group{
+      width: 30vw;
+      margin: auto;
+  }
+}
+
+
+
+/* LOADING SVG */
+.circular-loader {
+    -webkit-animation: rotate 3s linear infinite;
+            animation: rotate 3s linear infinite;
+    height: 100%;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+    width: 19px;
+    height: auto;
+    position: relative;
+    }
+    
+    .loader-path {
+      stroke:rgba(0, 0, 0, 0.39) !important;
+    stroke-dasharray: 150,200;
+    stroke-dashoffset: -10;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+            animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+    }
+    
+    @-webkit-keyframes rotate {
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+    }
+    
+    @keyframes rotate {
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+    }
+    @-webkit-keyframes dash {
+    0% {
+      stroke-dasharray: 1,200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89,200;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 89,200;
+      stroke-dashoffset: -124;
+    }
+    }
+    @keyframes dash {
+    0% {
+      stroke-dasharray: 1,200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89,200;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 89,200;
+      stroke-dashoffset: -124;
+    }
+    }
+    @-webkit-keyframes color {
+    0% {
+      stroke: #70c542;
+    }
+    40% {
+      stroke: #70c542;
+    }
+    66% {
+      stroke: #70c542;
+    }
+    80%, 90% {
+      stroke: #70c542;
+    }
+    }
+    @keyframes color {
+    0% {
+      stroke: #70c542;
+    }
+    40% {
+      stroke: #70c542;
+    }
+    66% {
+      stroke: #70c542;
+    }
+    80%, 90% {
+      stroke: #70c542;
+    }
+    }
+    
+::-webkit-scrollbar {
+  width: .2em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(219, 219, 219, 0.323); 
+  border-radius: 10px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(214, 214, 214, 0.44); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4d; 
+}
