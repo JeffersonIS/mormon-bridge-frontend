@@ -4,7 +4,6 @@ import FaceCard from '../FaceCard/FaceCard';
 
 function TableHeader(props){
     const gameState = props.gameState;
-    const player = props.player
 
     return(
         <Row className="text-center m-1 table-header">
