@@ -1,79 +1,58 @@
-.popup-text{
-    font-weight: 300;
+.popup-text {
+  font-weight: 300;
 }
 
-.popup-card-row{
-    justify-content: center;
-    text-align: center;
+.popup-card-row {
+  justify-content: center;
+  text-align: center;
 }
 
-.highlight-winner{
-    border: 2px solid #ff9d00;
+.highlight-winner {
+  border: 2px solid #ff9d00;
 }
 
-.popup-player-row{
-    justify-content: center;
-    text-align: center;
-    box-shadow: 2px 2px 10px 1px #80808011;
-    border-radius: 5px;
+.popup-player-row {
+  justify-content: center;
+  text-align: center;
+  box-shadow: 2px 2px 10px 1px #80808011;
+  border-radius: 5px;
 }
 
-.summary-col{
-    padding-top: 2px;
+.points-row {
+  padding-top: 2px;
+  box-shadow: 2px 2px 10px 1px #8080808f;
+  border-radius: 4px;
+  background-color: #346d43;
+  color: white;
 }
 
-.summary-col div{
-    line-height: 1.2em;
+.points-text *{
+  line-height: 1.2em;
+  font-weight: 300;
+  font-size: 1em;
+  color: white;
+
 }
 
-.points-row{
-    padding-top: 2px;
-    box-shadow: 2px 2px 10px 1px #8080808f;
-    border-radius: 4px;
-    background-color: #346d43;
-    color: white;
+.points-text-difference {
+  font-weight: 200;
+  font-size: 0.8em;
 }
 
-.points-text{
-    line-height: 1.2em;
-    font-weight: 300;
-    font-size: 1.2em;
+.summary-col {
+  padding-top: 2px;
 }
 
-.points-text-difference{
-    font-weight: 200;
-    font-size: .8em;
+.summary-col div {
+  line-height: 1.2em;
 }
 
-.points-col{
-    width: 49%;
-    display: flex;
-    border-radius: 9px;
+.l {
+  text-align: left;
+  margin-right: 2px;
 }
 
-.points-row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.points-col-right{
-    float: right;
-    text-align: right;
-  }
-
-.points-col-left{
-    float: left;
-    text-align: left;
-    flex-direction: row-reverse;
-}
-
-.l{
-    text-align: left;
-    margin-right: 2px;
-}
-
-.r{
-    text-align: right;
-    margin-left: 2px;
+.r {
+  text-align: right;
+  margin-left: 2px;
 }

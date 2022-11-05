@@ -1,15 +1,19 @@
-.app-container{
-    width: 99vw;
-    margin: auto;
+.app-container {
+  width: 99vw;
+  margin: auto;
 }
 
-.btn-hover:hover{
-    background-color: #2a5836 !important;
+.font-300{
+  font-weight: 300;
+}
+
+.btn-hover:hover {
+  background-color: #2a5836 !important;
 }
 
 /* larger than 900px */
 @media only screen and (min-width: 900px) {
-    .app-container{
-        width: 60vw;
-    }
+  .app-container {
+    width: 60vw;
+  }
 }
