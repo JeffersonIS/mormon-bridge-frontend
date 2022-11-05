@@ -246,8 +246,8 @@
 @keyframes background-pulsate {
   
   0% {
-    border: 2px solid #ff9d0073;
-    background-color:#ff9d0073;
+    border: 2px solid #ff9d00a6;
+    background-color:#ff9d00a6;
   }
   50% {
     border: 2px solid #ff9d0039;
@@ -255,16 +255,16 @@
 
   }
   100% {
-    border: 2px solid #ff9d0073;
-    background-color:#ff9d0073;
+    border: 2px solid #ff9d00a6;
+    background-color:#ff9d00a6;
   }
 }
 
 @keyframes button-pulsate {
   
   0% {
-    border: 2px solid #ff9d008f;
-    background-color:#ff9d008f;
+    border: 2px solid #ff9d00cd;
+    background-color:#ff9d00cd;
   }
   50% {
     border: 2px solid #ff9d0039;
@@ -272,8 +272,8 @@
 
   }
   100% {
-    border: 2px solid #ff9d008f;
-    background-color:#ff9d008f;
+    border: 2px solid #ff9d00cd;
+    background-color:#ff9d00cd;
   }
 }
 
