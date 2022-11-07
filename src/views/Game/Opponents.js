@@ -39,8 +39,8 @@ function Opponents(props){
               )}
               <div className="opponent-info">
                 <div>
-                  <b>{opponent?.name} </b>
-                  <small>{leadText}</small>
+                  {opponent?.name}
+                  <small> {leadText}</small>
                 </div>
                 {gameState.roundStatus === 0 ? (
                   <div>
@@ -60,11 +60,6 @@ function Opponents(props){
                     Tricks: <b>{opponent?.tricksWon}</b>
                   </small>
                 </div>
-                {/* <div>
-                  <small>
-                    Points: <b>{opponent?.points}</b>
-                  </small>
-                </div> */}
               </div>
             </div>
           );

@@ -1,14 +1,17 @@
-.warning-bar-row{
-  background-color: #ff9d0073;
+.message-bar-warning{
+  background-color: #ff9d00bb;
   color: black;
-  transition: background-color .5s;
 }
 
-.success-bar-row{
+.message-bar-success{
   background-color: #346d43;
   color: white;
-  transition: background-color .5s;
+}
 
+.message-bar-secondary{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(196, 196, 196, 0.248);
+  color: black;
 }
 
 .message-bar{
@@ -16,6 +19,9 @@
   font-weight: 300;
   font-size: 90%;
   text-align: center;
+  box-shadow: 1px 1px 5px 1px #dddddd5f;
+  transition: background-color .5s;
+  min-height: 2.2em;
 }
 
 .btn-play-card {

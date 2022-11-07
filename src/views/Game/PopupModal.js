@@ -5,7 +5,7 @@ import "./popup.css";
 function PopupModal(props) {
   const gameState = props.gameState;
   const [scoredPlayers, setScoredPlayers] = useState(null);
-  const [scoresText, setScoresText] = useState("Player Scores");
+  const [scoresText, setScoresText] = useState("Scores");
 
   useEffect(() => {
 
@@ -18,7 +18,7 @@ function PopupModal(props) {
 
     gameState.gameOver
       ? setScoresText(`${gameState.gameWinner} WINS!`)
-      : setScoresText("Player Scores");
+      : setScoresText("Scores");
   }, [gameState, props.playerId]);
 
   return (
@@ -29,13 +29,13 @@ function PopupModal(props) {
         backdrop="static"
         keyboard={false}
       >
-          <div className="points-row points-row m-2 mt-2 mb-2 p-3 text-center">
+          <div className="points-row points-row m-2 mt-2 mb-2 p-2 text-center">
             <>
-              <h4 className="popup-text">{scoresText}</h4>
+              <h3 className="popup-text">{scoresText}</h3>
               <Table className="points-text">
                 <thead className="points-text">
                   <tr>
-                    <th></th>
+                    {/* <th></th> */}
                     <th>Name</th>
                     <th>Total</th>
                     <th>Bet</th>
@@ -51,10 +51,11 @@ function PopupModal(props) {
                 let diff = person.tricksBetLastTurn === person.tricksWonLastTurn
                     ? 10 + person.tricksWonLastTurn
                     : person.tricksWonLastTurn;
+                let classString = count === 0 ? "popup-bold" : "";
                   
                 return (
-                  <tr >
-                    <td >{count + 1}</td>
+                  <tr className={classString}>
+                    {/* <td >{count + 1}</td> */}
                     <td>{name}</td>
                     <td>{person.points}</td>
                     <td>{person.tricksBetLastTurn}</td>

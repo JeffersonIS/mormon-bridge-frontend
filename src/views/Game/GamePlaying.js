@@ -113,7 +113,8 @@ function GamePlaying(props) {
 
     //WHEN IT IS CURRENT PLAYER'S TURN
     if (gameState.currentPlayerTurnId === player?.socketId) {
-      if(gameState.roundStatus === 1 && !gameState.turnOver){
+      if(gameState.roundStatus === 1 && !gameState.turnOver && !gameState.gameOver){
+        console.log('your turn soudn')
         playYourTurnSfx();
 
         setIsCurrentTurnClass("current-player-turn");
@@ -131,7 +132,10 @@ function GamePlaying(props) {
     if (gameState.roundStatus === 0){
       if(!player?.hasBet && !gameState.roundOver){
         if(!hasAlertedPlayerToBet){
-          playYourTurnSfx();
+          if(!gameState.gameOver){
+            console.log('time to bet sond')
+            playYourTurnSfx();
+          }
           setHighlightBetClass("highlight-bet");
           setHasAlertedPlayerToBet(true);
           }

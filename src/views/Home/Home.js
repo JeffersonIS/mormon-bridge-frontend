@@ -14,7 +14,8 @@ import { useParams } from "react-router-dom";
 import "./home.css";
 import { useNavigate } from "react-router-dom";
 
-const socket = io.connect("https://mormon-bridge-backend.herokuapp.com/")
+// const socket = io.connect("https://mormon-bridge-backend.herokuapp.com/");
+const socket = io.connect("http://localhost:3001/");
 
 function WelcomePage() {
   const params = useParams();
@@ -222,7 +223,7 @@ function WelcomePage() {
                     onChange={(e) => {
                       setPlayerName(e.target.value);
                     }}
-                    className="mt-4"
+                    className="mt-5"
                     placeholder="Enter name"
                   />         
                   <Form.Text style={{ color: "red" }}>
@@ -247,7 +248,7 @@ function WelcomePage() {
                     style={{ backgroundColor: "#346d43" }}
                     variant="success"
                   >
-                    Join Existing Game
+                    Join Game
                   </Button>
 
                   <h5 className="font-300">- OR -</h5>

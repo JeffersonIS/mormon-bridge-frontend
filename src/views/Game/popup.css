@@ -2,6 +2,11 @@
   font-weight: 300;
 }
 
+.popup-bold td{
+  font-weight: 400;
+  color: #fcb612d8;
+}
+
 .popup-card-row {
   justify-content: center;
   text-align: center;

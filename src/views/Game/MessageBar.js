@@ -6,7 +6,7 @@ function MessageBar(props){
     const [leftText, setLeftText] = useState("");
     const [middleText, setMiddleText] = useState("Place Bets");
     const [rightText, setRightText] = useState("");
-    const [classString, setClassString] = useState("success-bar-row");
+    const [classString, setClassString] = useState("message-bar-success");
 
     useEffect(() => {
         if(gameState.roundStatus === 1){
@@ -14,35 +14,37 @@ function MessageBar(props){
                 setLeftText(`WARNING`);
                 setMiddleText(`Total Bets: ${gameState.totalBets}`);
                 setRightText(`Possible: ${gameState.numCardsToDeal}`);
-                setClassString("warning-bar-row");
+                setClassString("message-bar-warning");
             } else if(gameState.totalBets < gameState.numCardsToDeal){
                 setLeftText(`WARNING`);
                 setMiddleText(`Total Bets: ${gameState.totalBets}`);
                 setRightText(`Possible: ${gameState.numCardsToDeal}`);
-                setClassString("warning-bar-row");
+                setClassString("message-bar-warning");
             } else if(gameState.totalBets === gameState.numCardsToDeal){
                 setLeftText(``);
                 setMiddleText(`Total Bets: ${gameState.totalBets}`);
                 setRightText(`Possible: ${gameState.numCardsToDeal}`);
-                setClassString("success-bar-row");
+                setClassString("message-bar-success");
             }
         } else if(gameState.roundStatus === 2){
-            setClassString("success-bar-row");
             let player = gameState.currentWinningPlayer;
 
             if(player){
+                setClassString("message-bar-success");
+
                 setLeftText(``);
                 setMiddleText(`${player.name} won the trick`);
                 setRightText(``);
             } else {
                 setLeftText(``);
-                setMiddleText(`Good Luck`);
+                setClassString("message-bar-secondary");
+                setMiddleText(``);
                 setRightText(``);
             }
         } else {
-            setClassString("success-bar-row");
+            setClassString("message-bar-secondary");
             setLeftText(``);
-            setMiddleText(`Good Luck`);
+            setMiddleText(``);
             setRightText(``);
 }
     }, [gameState])
