@@ -14,8 +14,8 @@ import { useParams } from "react-router-dom";
 import "./home.css";
 import { useNavigate } from "react-router-dom";
 
-// const socket = io.connect("https://mormon-bridge-backend.herokuapp.com/");
-const socket = io.connect("http://localhost:3001/");
+const socket = io.connect("https://mormon-bridge-backend.herokuapp.com/");
+// const socket = io.connect("http://localhost:3001/");
 
 function WelcomePage() {
   const params = useParams();
